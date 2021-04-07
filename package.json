@@ -1,12 +1,12 @@
 {
   "name": "dialogspp",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Customizable dialogs for historypp. Closables with back navigation event.",
   "main": "src/dialogspp.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository":"https://github.com/Martoxdlol/dialogspp",
+  "repository": "https://github.com/Martoxdlol/dialogspp",
   "keywords": [
     "dialogs",
     "historypp",
