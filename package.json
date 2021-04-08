@@ -1,10 +1,13 @@
 {
   "name": "dialogspp",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "Customizable dialogs for historypp. Closables with back navigation event.",
-  "main": "src/dialogspp.js",
+  "main": "dist/dialogspp.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install": "echo Dialogspp OK",
+    "build-dev": "webpack --config webpack.dev.config.js",
+    "dev": "webpack serve --config webpack.dev.config.js",
+    "prod": "webpack"
   },
   "repository": "https://github.com/Martoxdlol/dialogspp",
   "keywords": [
@@ -13,5 +16,38 @@
     "web"
   ],
   "author": "Tomás Cichero <martoxdlol@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "historypp": "^0.0.x"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-decorators": "^7.12.12",
+    "@babel/plugin-proposal-export-default-from": "^7.12.1",
+    "@babel/plugin-proposal-export-namespace-from": "^7.12.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
+    "@babel/plugin-proposal-pipeline-operator": "^7.12.1",
+    "@babel/plugin-transform-arrow-functions": "^7.12.1",
+    "@babel/plugin-transform-classes": "^7.12.1",
+    "@babel/plugin-transform-destructuring": "^7.12.1",
+    "@babel/plugin-transform-modules-commonjs": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/plugin-transform-template-literals": "^7.12.1",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
+    "extract-css-chunks-webpack-plugin": "^4.9.0",
+    "mini-css-extract-plugin": "^1.3.4",
+    "webpack": "^5.13.0",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "historypp": "^0.0.x"
+  }
 }
